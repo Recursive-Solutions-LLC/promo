@@ -295,7 +295,7 @@ section{
     }
 }
 /* 
-! tailwindcss v3.4.3 | MIT License | https://tailwindcss.com
+! tailwindcss v3.3.3 | MIT License | https://tailwindcss.com
 */
 /*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
@@ -320,19 +320,16 @@ section{
 4. Use the user's configured `sans` font-family by default.
 5. Use the user's configured `sans` font-feature-settings by default.
 6. Use the user's configured `sans` font-variation-settings by default.
-7. Disable tap highlights on iOS
 */
-html,
-:host {
+html {
   line-height: 1.5; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
   -moz-tab-size: 4; /* 3 */
   -o-tab-size: 4;
      tab-size: 4; /* 3 */
-  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* 4 */
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* 4 */
   font-feature-settings: normal; /* 5 */
   font-variation-settings: normal; /* 6 */
-  -webkit-tap-highlight-color: transparent; /* 7 */
 }
 /*
 1. Remove the margin in all browsers.
@@ -386,19 +383,15 @@ strong {
   font-weight: bolder;
 }
 /*
-1. Use the user's configured `mono` font-family by default.
-2. Use the user's configured `mono` font-feature-settings by default.
-3. Use the user's configured `mono` font-variation-settings by default.
-4. Correct the odd `em` font sizing in all browsers.
+1. Use the user's configured `mono` font family by default.
+2. Correct the odd `em` font sizing in all browsers.
 */
 code,
 kbd,
 samp,
 pre {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; /* 1 */
-  font-feature-settings: normal; /* 2 */
-  font-variation-settings: normal; /* 3 */
-  font-size: 1em; /* 4 */
+  font-size: 1em; /* 2 */
 }
 /*
 Add the correct font size in all browsers.
@@ -448,7 +441,6 @@ textarea {
   font-size: 100%; /* 1 */
   font-weight: inherit; /* 1 */
   line-height: inherit; /* 1 */
-  letter-spacing: inherit; /* 1 */
   color: inherit; /* 1 */
   margin: 0; /* 2 */
   padding: 0; /* 3 */
@@ -465,9 +457,9 @@ select {
 2. Remove default button styles.
 */
 button,
-input:where([type='button']),
-input:where([type='reset']),
-input:where([type='submit']) {
+[type='button'],
+[type='reset'],
+[type='submit'] {
   -webkit-appearance: button; /* 1 */
   background-color: transparent; /* 2 */
   background-image: none; /* 2 */
@@ -623,7 +615,7 @@ video {
 [hidden] {
   display: none;
 }
-[type='text'],input:where(:not([type])),[type='email'],[type='url'],[type='password'],[type='number'],[type='date'],[type='datetime-local'],[type='month'],[type='search'],[type='tel'],[type='time'],[type='week'],[multiple],textarea,select{
+[type='text'],[type='email'],[type='url'],[type='password'],[type='number'],[type='date'],[type='datetime-local'],[type='month'],[type='search'],[type='tel'],[type='time'],[type='week'],[multiple],textarea,select{
     -webkit-appearance: none;
        -moz-appearance: none;
             appearance: none;
@@ -639,7 +631,7 @@ video {
     line-height: 1.5rem;
     --tw-shadow: 0 0 #0000;
 }
-[type='text']:focus, input:where(:not([type])):focus, [type='email']:focus, [type='url']:focus, [type='password']:focus, [type='number']:focus, [type='date']:focus, [type='datetime-local']:focus, [type='month']:focus, [type='search']:focus, [type='tel']:focus, [type='time']:focus, [type='week']:focus, [multiple]:focus, textarea:focus, select:focus{
+[type='text']:focus, [type='email']:focus, [type='url']:focus, [type='password']:focus, [type='number']:focus, [type='date']:focus, [type='datetime-local']:focus, [type='month']:focus, [type='search']:focus, [type='tel']:focus, [type='time']:focus, [type='week']:focus, [multiple]:focus, textarea:focus, select:focus{
     outline: 2px solid transparent;
     outline-offset: 2px;
     --tw-ring-inset: var(--tw-empty,/*!*/ /*!*/);
@@ -664,10 +656,6 @@ input::placeholder,textarea::placeholder{
 }
 ::-webkit-date-and-time-value{
     min-height: 1.5em;
-    text-align: inherit;
-}
-::-webkit-datetime-edit{
-    display: inline-flex;
 }
 ::-webkit-datetime-edit,::-webkit-datetime-edit-year-field,::-webkit-datetime-edit-month-field,::-webkit-datetime-edit-day-field,::-webkit-datetime-edit-hour-field,::-webkit-datetime-edit-minute-field,::-webkit-datetime-edit-second-field,::-webkit-datetime-edit-millisecond-field,::-webkit-datetime-edit-meridiem-field{
     padding-top: 0;
@@ -682,7 +670,7 @@ select{
     -webkit-print-color-adjust: exact;
             print-color-adjust: exact;
 }
-[multiple],[size]:where(select:not([size="1"])){
+[multiple]{
     background-image: initial;
     background-position: initial;
     background-repeat: unset;
@@ -740,22 +728,8 @@ select{
 [type='checkbox']:checked{
     background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='white' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z'/%3e%3c/svg%3e");
 }
-@media (forced-colors: active) {
-    [type='checkbox']:checked{
-        -webkit-appearance: auto;
-           -moz-appearance: auto;
-                appearance: auto;
-    }
-}
 [type='radio']:checked{
     background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='white' xmlns='http://www.w3.org/2000/svg'%3e%3ccircle cx='8' cy='8' r='3'/%3e%3c/svg%3e");
-}
-@media (forced-colors: active) {
-    [type='radio']:checked{
-        -webkit-appearance: auto;
-           -moz-appearance: auto;
-                appearance: auto;
-    }
 }
 [type='checkbox']:checked:hover,[type='checkbox']:checked:focus,[type='radio']:checked:hover,[type='radio']:checked:focus{
     border-color: transparent;
@@ -768,13 +742,6 @@ select{
     background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
-}
-@media (forced-colors: active) {
-    [type='checkbox']:indeterminate{
-        -webkit-appearance: auto;
-           -moz-appearance: auto;
-                appearance: auto;
-    }
 }
 [type='checkbox']:indeterminate:hover,[type='checkbox']:indeterminate:focus{
     border-color: transparent;
@@ -841,10 +808,6 @@ select{
     --tw-backdrop-opacity:  ;
     --tw-backdrop-saturate:  ;
     --tw-backdrop-sepia:  ;
-    --tw-contain-size:  ;
-    --tw-contain-layout:  ;
-    --tw-contain-paint:  ;
-    --tw-contain-style:  ;
 }
 ::backdrop{
     --tw-border-spacing-x: 0;
@@ -894,10 +857,6 @@ select{
     --tw-backdrop-opacity:  ;
     --tw-backdrop-saturate:  ;
     --tw-backdrop-sepia:  ;
-    --tw-contain-size:  ;
-    --tw-contain-layout:  ;
-    --tw-contain-paint:  ;
-    --tw-contain-style:  ;
 }
 .container{
     width: 100%;
@@ -1153,7 +1112,8 @@ select{
     margin-bottom: -1px;
 }
 .-me-2{
-    margin-inline-end: -0.5rem;
+    -webkit-margin-end: -0.5rem;
+            margin-inline-end: -0.5rem;
 }
 .mb-1{
     margin-bottom: 0.25rem;
@@ -1186,25 +1146,32 @@ select{
     margin-bottom: 2rem;
 }
 .me-1{
-    margin-inline-end: 0.25rem;
+    -webkit-margin-end: 0.25rem;
+            margin-inline-end: 0.25rem;
 }
 .me-2{
-    margin-inline-end: 0.5rem;
+    -webkit-margin-end: 0.5rem;
+            margin-inline-end: 0.5rem;
 }
 .me-3{
-    margin-inline-end: 0.75rem;
+    -webkit-margin-end: 0.75rem;
+            margin-inline-end: 0.75rem;
 }
 .ms-1{
-    margin-inline-start: 0.25rem;
+    -webkit-margin-start: 0.25rem;
+            margin-inline-start: 0.25rem;
 }
 .ms-2{
-    margin-inline-start: 0.5rem;
+    -webkit-margin-start: 0.5rem;
+            margin-inline-start: 0.5rem;
 }
 .ms-3{
-    margin-inline-start: 0.75rem;
+    -webkit-margin-start: 0.75rem;
+            margin-inline-start: 0.75rem;
 }
 .ms-auto{
-    margin-inline-start: auto;
+    -webkit-margin-start: auto;
+            margin-inline-start: auto;
 }
 .mt-0{
     margin-top: 0px;
@@ -1344,6 +1311,9 @@ select{
 .h-px{
     height: 1px;
 }
+.h-36{
+    height: 9rem;
+}
 .min-h-\[calc\(100\%-3\.5rem\)\]{
     min-height: calc(100% - 3.5rem);
 }
@@ -1433,6 +1403,9 @@ select{
 }
 .w-full{
     width: 100%;
+}
+.w-6\/12{
+    width: 50%;
 }
 .min-w-full{
     min-width: 100%;
@@ -1673,9 +1646,6 @@ select{
 }
 .whitespace-nowrap{
     white-space: nowrap;
-}
-.text-wrap{
-    text-wrap: wrap;
 }
 .rounded{
     border-radius: 0.25rem;
@@ -2111,25 +2081,32 @@ select{
     padding-bottom: 1.5rem;
 }
 .pe-2{
-    padding-inline-end: 0.5rem;
+    -webkit-padding-end: 0.5rem;
+            padding-inline-end: 0.5rem;
 }
 .pe-32{
-    padding-inline-end: 8rem;
+    -webkit-padding-end: 8rem;
+            padding-inline-end: 8rem;
 }
 .pe-4{
-    padding-inline-end: 1rem;
+    -webkit-padding-end: 1rem;
+            padding-inline-end: 1rem;
 }
 .pe-40{
-    padding-inline-end: 10rem;
+    -webkit-padding-end: 10rem;
+            padding-inline-end: 10rem;
 }
 .ps-4{
-    padding-inline-start: 1rem;
+    -webkit-padding-start: 1rem;
+            padding-inline-start: 1rem;
 }
 .ps-5{
-    padding-inline-start: 1.25rem;
+    -webkit-padding-start: 1.25rem;
+            padding-inline-start: 1.25rem;
 }
 .ps-7{
-    padding-inline-start: 1.75rem;
+    -webkit-padding-start: 1.75rem;
+            padding-inline-start: 1.75rem;
 }
 .pt-0{
     padding-top: 0px;
@@ -2754,6 +2731,11 @@ select{
 .open .hs-overlay-open\:opacity-100{
     opacity: 1;
 }
+@media (prefers-color-scheme: dark){
+    .dark\:bg-opacity-80{
+        --tw-bg-opacity: 0.8;
+    }
+}
 @media (min-width: 640px){
     .sm\:top-16{
         top: 4rem;
@@ -2801,7 +2783,8 @@ select{
         grid-column: span 7 / span 7;
     }
     .md\:me-6{
-        margin-inline-end: 1.5rem;
+        -webkit-margin-end: 1.5rem;
+                margin-inline-end: 1.5rem;
     }
     .md\:block{
         display: block;
@@ -2907,7 +2890,8 @@ select{
         margin-left: 3rem;
     }
     .lg\:ms-0{
-        margin-inline-start: 0px;
+        -webkit-margin-start: 0px;
+                margin-inline-start: 0px;
     }
     .lg\:mt-0{
         margin-top: 0px;
@@ -2929,6 +2913,12 @@ select{
     }
     .lg\:h-screen{
         height: 100vh;
+    }
+    .lg\:h-36{
+        height: 9rem;
+    }
+    .lg\:h-32{
+        height: 8rem;
     }
     .lg\:w-1\/2{
         width: 50%;
@@ -2998,7 +2988,8 @@ select{
         padding-bottom: 1.25rem;
     }
     .lg\:ps-0{
-        padding-inline-start: 0px;
+        -webkit-padding-start: 0px;
+                padding-inline-start: 0px;
     }
     .lg\:pt-0{
         padding-top: 0px;
@@ -3057,10 +3048,5 @@ select{
     }
     .\32xl\:flex-nowrap{
         flex-wrap: nowrap;
-    }
-}
-@media (prefers-color-scheme: dark){
-    .dark\:bg-opacity-80{
-        --tw-bg-opacity: 0.8;
     }
 }

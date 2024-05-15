@@ -2994,6 +2994,12 @@ select{
     .lg\:h-screen{
         height: 100vh;
     }
+    .lg\:h-28{
+        height: 7rem;
+    }
+    .lg\:h-24{
+        height: 6rem;
+    }
     .lg\:w-1\/2{
         width: 50%;
     }

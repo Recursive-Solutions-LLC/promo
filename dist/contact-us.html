@@ -128,7 +128,8 @@
       <div class="backdrop-blur-2xl bg-default-950/40 rounded-2xl overflow-hidden max-w-5xl mx-auto">
         <div class="flex flex-col h-full p-10">
           <div class="pb-6">
-            <h4 class="text-5xl font-bold text-primary emb-4 text-center">Thanks for  your trust, we are exited to start doing business with you</h4>
+            <h4 class="text-5xl font-bold text-primary emb-4 text-center">Thanks for your trust, we are exited to start
+              doing business with you</h4>
             <p class="text-default-300 text-center text-lg">A member of our team will be in touch with you soon.</p>
             <div class="mx-auto w-full max-w-md p-6" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="1000">
               <form id="multi-step-form">
@@ -540,35 +541,39 @@
                   spreadsheets, endless email threads, empowering businesses to achieve greater efficiency.</p>
                 <div class="backdrop-blur-2xl bg-white/10 rounded-md max-w-xl mx-auto">
                   <form class="w-full flex items-center justify-between mt-7" id="newsletter-form">
-                    <input type="email" name="email" id="email" class="w-full p-4 border-0 focus:outline-none focus:ring-0 text-sm text-white placeholder:text-white bg-transparent" placeholder="Enter Your Email" autocomplete="off">
-                    <button class="py-2 px-6 border-0 text-white font-semibold text-sm rounded-md backdrop-blur-2xl bg-primary hover:bg-primary-hover hover:text-white transition-all duration-500" type="submit">
-                        <div class="flex items-center justify-center gap-1">
-                            <span>join the newsletter</span>
-                            <i class="fa-solid fa-arrow-right"></i>
-                        </div>
+                    <input type="email" name="email" id="email"
+                      class="w-full p-4 border-0 focus:outline-none focus:ring-0 text-sm text-white placeholder:text-white bg-transparent"
+                      placeholder="Enter Your Email" autocomplete="off">
+                    <button
+                      class="py-2 px-6 border-0 text-white font-semibold text-sm rounded-md backdrop-blur-2xl bg-primary hover:bg-primary-hover hover:text-white transition-all duration-500"
+                      type="submit">
+                      <div class="flex items-center justify-center gap-1">
+                        <span>join the newsletter</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                      </div>
                     </button>
-                </form>
-                
-                <script>
-                document.getElementById('newsletter-form').addEventListener('submit', async function(e) {
-                    e.preventDefault();
-                    const email = document.getElementById('email').value;
-                
-                    const response = await fetch('https://hook.us1.make.com/rb5eqya0wovyenf4pentx9mj1ljqvael', {
+                  </form>
+                  <div id="thanks-message" class="hidden text-white mt-4">Thank you for subscribing!</div>
+
+                  <script>
+                    document.getElementById('newsletter-form').addEventListener('submit', async function (e) {
+                      e.preventDefault();
+                      const email = document.getElementById('email').value;
+
+                      const response = await fetch('https://hook.us1.make.com/rb5eqya0wovyenf4pentx9mj1ljqvael', {
                         method: 'POST',
                         headers: {
-                            'Content-Type': 'application/json'
+                          'Content-Type': 'application/json'
                         },
                         body: JSON.stringify({ email: email })
+                      });
+
+                      if (response.ok) {
+                        document.getElementById('newsletter-form').classList.add('hidden');
+                        document.getElementById('thanks-message').classList.remove('hidden');
+                      }
                     });
-                
-                    if(response.ok) {
-                        alert('Email submitted successfully!');
-                    } else {
-                        alert('There was an error submitting your email.');
-                    }
-                });
-                </script>
+                  </script>
                 </div>
               </div>
             </div>

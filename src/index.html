@@ -1245,6 +1245,8 @@
                                             </div>
                                         </button>
                                     </form>
+                                    <div id="thanks-message" class="hidden text-white mt-4">Thank you for subscribing!
+                                    </div>
 
                                     <script>
                                         document.getElementById('newsletter-form').addEventListener('submit', async function (e) {
@@ -1260,9 +1262,8 @@
                                             });
 
                                             if (response.ok) {
-                                                alert('Email submitted successfully!');
-                                            } else {
-                                                alert('There was an error submitting your email.');
+                                                document.getElementById('newsletter-form').classList.add('hidden');
+                                                document.getElementById('thanks-message').classList.remove('hidden');
                                             }
                                         });
                                     </script>

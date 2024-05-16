@@ -1139,6 +1139,9 @@ select{
 .m-auto{
     margin: auto;
 }
+.m-10{
+    margin: 2.5rem;
+}
 .mx-1{
     margin-left: 0.25rem;
     margin-right: 0.25rem;
@@ -1896,10 +1899,6 @@ select{
 .bg-yellow-500\/20{
     background-color: rgb(234 179 8 / 0.2);
 }
-.bg-slate-600{
-    --tw-bg-opacity: 1;
-    background-color: rgb(71 85 105 / var(--tw-bg-opacity));
-}
 .bg-opacity-50{
     --tw-bg-opacity: 0.5;
 }
@@ -2211,6 +2210,9 @@ select{
 }
 .pt-\[74px\]{
     padding-top: 74px;
+}
+.pt-24{
+    padding-top: 6rem;
 }
 .text-left{
     text-align: left;

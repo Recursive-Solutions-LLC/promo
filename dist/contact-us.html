@@ -539,18 +539,36 @@
                 <p class="text-base text-default-200 font-medium px-5">Our app eliminates the need for complex
                   spreadsheets, endless email threads, empowering businesses to achieve greater efficiency.</p>
                 <div class="backdrop-blur-2xl bg-white/10 rounded-md max-w-xl mx-auto">
-                  <form class="w-full flex items-center justify-between mt-7 ">
-                    <input type="email" name="email" id="email"
-                      class="w-full p-4 border-0 focus:outline-none focus:ring-0 text-sm text-white placeholder:text-white bg-transparent"
-                      placeholder="Enter Your Email" autocomplete="off">
-                    <button
-                      class="py-2 px-6 border-0 text-white font-semibold text-sm rounded-md backdrop-blur-2xl bg-primary hover:bg-primary-hover hover:text-white transition-all duration-500">
-                      <div class="flex items-center justify-center gap-1">
-                        <span>join the newsletter</span>
-                        <i class="fa-solid fa-arrow-right"></i>
-                      </div>
+                  <form class="w-full flex items-center justify-between mt-7" id="newsletter-form">
+                    <input type="email" name="email" id="email" class="w-full p-4 border-0 focus:outline-none focus:ring-0 text-sm text-white placeholder:text-white bg-transparent" placeholder="Enter Your Email" autocomplete="off">
+                    <button class="py-2 px-6 border-0 text-white font-semibold text-sm rounded-md backdrop-blur-2xl bg-primary hover:bg-primary-hover hover:text-white transition-all duration-500" type="submit">
+                        <div class="flex items-center justify-center gap-1">
+                            <span>join the newsletter</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
                     </button>
-                  </form>
+                </form>
+                
+                <script>
+                document.getElementById('newsletter-form').addEventListener('submit', async function(e) {
+                    e.preventDefault();
+                    const email = document.getElementById('email').value;
+                
+                    const response = await fetch('https://hook.us1.make.com/rb5eqya0wovyenf4pentx9mj1ljqvael', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify({ email: email })
+                    });
+                
+                    if(response.ok) {
+                        alert('Email submitted successfully!');
+                    } else {
+                        alert('There was an error submitting your email.');
+                    }
+                });
+                </script>
                 </div>
               </div>
             </div>

@@ -108,19 +108,50 @@
         </div>
     </header>
 
-
-    <!-- Form for collecting user information -->
-<section class="py-20 flex">
-    <div class="max-w-2xl mx-auto text-center">
-      <h1 class="text-5xl font-medium capitalize text-primary mb-4">Fill this form</h1>
-      <p class="text-sm text-gray-300 font-medium">A member of our team will be in touch with you soon.</p>
+    <section class="pt-20">
+      <div class="container">
+        <div class="text-center relative">
+            <div class="flex justify-center">
+                <div class="max-w-2xl">
+                    <h2 class="md:text-6xl/tight text-5xl text-default-100 font-semibold mb-6">Lets Automate</h2>
+                    <p class="text-base text-default-200 font-medium px-5">Fill out the form below to receive 5 FREE Automations that are the most crucial and beneficial to your business!</p>
+              
+                </div>
+            </div>
+        </div>
     </div>
-  
-    <div class="mx-auto w-full max-w-md p-6 bg-gray-800/40 rounded-2xl backdrop-blur-sm" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="1000">
+    </section>
+    <section class="flex items-center py-6 px-0 lg:p-10 w-full lg:h-screen">
+
+      <div class="container">
+          <div class="backdrop-blur-2xl bg-default-950/40 rounded-2xl overflow-hidden max-w-5xl mx-auto">
+              <div class="grid lg:grid-cols-2 gap-10">
+                  <div class="hidden lg:block ps-4 py-4">
+                      <div class="relative rounded-xl overflow-hidden h-full w-full">
+                          <img src="assets/images/ai/auth-img.jpg" alt="" class="w-full h-full transform -scale-x-100">
+                          <div class="absolute inset-0 bg-default-950/40">
+                              <div class="flex items-end justify-center h-full">
+                                  <div class="p-6 text-start">
+                                      <h5 class="text-xl font-bold text-white mb-3">Is the best way, <br> to build your marketing strategy!</h5>
+                                      <p class="text-base font-medium text-default-500">Try all paid functions for free. just register and create your first widget, it simple and fast.</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div><!-- end gri-cols -->
+
+                  <div class="flex flex-col h-full p-10 lg:ps-0">
+                      
+                      <div class="pb6 ">
+                          <h4 class="text-5xl font-bold text-primary emb-4 text-center">Get Started Now</h4>
+                          <p class="text-default-300  text-center">A member of our team will be in touch with you soon.</p>
+
+                       
+    <div class="mx-auto w-full max-w-md p-6 " data-aos="fade-up" data-aos-easing="ease" data-aos-duration="1000">
       <form id="multi-step-form">
         <!-- Step 1 -->
         <div class="form-step">
-          <h1 class="text-3xl font-medium mb-4">First up, What's your name?*</h1>
+          <h1 class="text-3xl font-medium mb-4 text-white">First up, What's your name?*</h1>
           <div class="mb-4">
             <label for="first-name" class="block text-gray-300 font-medium mb-2">First Name</label>
             <input type="text" id="first-name" name="first-name" class="w-full px-4 py-3 rounded-lg bg-gray-700 text-white border border-gray-600 focus:ring-primary focus:border-primary" required>
@@ -138,7 +169,7 @@
   
         <!-- Step 2 -->
         <div class="form-step hidden">
-          <h1 class="text-3xl font-medium mb-4">Tell us about your organization</h1>
+          <h1 class="text-3xl font-medium mb-4 text-white">Tell us about your organization</h1>
           <div class="mb-4">
             <label for="company-name" class="block text-gray-300 font-medium mb-2">Company or Organization Name</label>
             <input type="text" id="company-name" name="company-name" class="w-full px-4 py-3 rounded-lg bg-gray-700 text-white border border-gray-600 focus:ring-primary focus:border-primary" required>
@@ -157,7 +188,7 @@
               <option value="51-200">51-200</option>
               <option value="201-1000">201-1000</option>
             </select>
-            <span class="text-red-500 hidden" id="error-size">Please select the size of your business.</span>
+            <span class="text-red-500 hidden " id="error-size">Please select the size of your business.</span>
           </div>
           <div class="flex justify-between">
             <button type="button" onclick="prevStep()" class="bg-primary text-white py-2 px-6 rounded-full hover:bg-primary-hover transition-all duration-300">Previous</button>
@@ -167,7 +198,7 @@
   
         <!-- Step 3 -->
         <div class="form-step hidden">
-          <h1 class="text-3xl font-medium mb-4">Contact Information</h1>
+          <h1 class="text-3xl font-medium mb-4 text-white">Contact Information</h1>
           <div class="mb-4">
             <label for="email" class="block text-gray-300 font-medium mb-2">Email</label>
             <input type="email" id="email" name="email" class="w-full px-4 py-3 rounded-lg bg-gray-700 text-white border border-gray-600 focus:ring-primary focus:border-primary" required>
@@ -186,7 +217,7 @@
   
         <!-- Step 4 -->
         <div class="form-step hidden">
-          <h1 class="text-3xl font-medium mb-4">Old School Processes</h1>
+          <h1 class="text-3xl font-medium mb-4 text-white">Old School Processes</h1>
           <div class="mb-4">
             <label for="old-processes" class="block text-gray-300 font-medium mb-2">What are the old school processes you would like to automate in your business?</label>
             <textarea id="old-processes" name="old-processes" class="w-full px-4 py-3 rounded-lg bg-gray-700 text-white border border-gray-600 focus:ring-primary focus:border-primary" required></textarea>
@@ -200,7 +231,7 @@
   
         <!-- Step 5 -->
         <div class="form-step hidden">
-          <h1 class="text-3xl font-medium mb-4">Your Tools</h1>
+          <h1 class="text-3xl font-medium mb-4 text-white">Your Tools</h1>
           <div class="mb-4">
             <label for="tools" class="block text-gray-300 font-medium mb-2">Select your tools</label>
             <div class="flex flex-col">
@@ -227,7 +258,7 @@
   
         <!-- Step 6 -->
         <div class="form-step hidden">
-          <h1 class="text-3xl font-medium mb-4">Tasks Slowing Down Your Business</h1>
+          <h1 class="text-3xl font-medium mb-4 text-white">Tasks Slowing Down Your Business</h1>
           <div class="mb-4">
             <label for="slow-tasks" class="block text-gray-300 font-medium mb-2">What are the tasks slowing down your business?</label>
             <div class="flex flex-col">
@@ -257,7 +288,7 @@
   
         <!-- Step 7 -->
         <div class="form-step hidden">
-          <h1 class="text-3xl font-medium mb-4">Department to Automate</h1>
+          <h1 class="text-3xl font-medium mb-4 text-white">Department to Automate</h1>
           <div class="mb-4">
             <label for="department" class="block text-gray-300 font-medium mb-2">Which department would you like to automate the most?</label>
             <select id="department" name="department" class="w-full px-4 py-3 rounded-lg bg-gray-700 text-white border border-gray-600 focus:ring-primary focus:border-primary" required>
@@ -278,7 +309,7 @@
   
         <!-- Step 8 -->
         <div class="form-step hidden">
-          <h1 class="text-3xl font-medium mb-4">Magic Automation</h1>
+          <h1 class="text-3xl font-medium mb-4 text-white">Magic Automation</h1>
           <div class="mb-4">
             <label for="magic-task" class="block text-gray-300 font-medium mb-2">If you could automate one of your daily tasks by magic, which one would it be?</label>
             <textarea id="magic-task" name="magic-task" class="w-full px-4 py-3 rounded-lg bg-gray-700 text-white border border-gray-600 focus:ring-primary focus:border-primary" required></textarea>
@@ -291,7 +322,18 @@
         </div>
       </form>
     </div>
-  </section>
+                      </div>
+              
+                  </div> <!-- end col -->
+              </div> <!-- end grid -->
+          </div> <!-- end bg -->
+    
+      </div><!-- end container -->
+  </section><!-- end section -->
+
+
+    <!-- Form for collecting user information -->
+
   
   <!-- JavaScript for handling the form steps -->
   <script>
@@ -390,7 +432,68 @@
     showStep(currentStep);
   </script>
 
+  <section id="home" class="relative overflow-hidden pt-[72px] bg-default-950/40 backdrop-blur-3xl">
+    <div class="absolute h-14 w-14 bg-primary/10 top-2/3 start-80 -z-1 rounded-2xl rounded-tl-none rounded-br-none animate-[spin_10s_linear_infinite]"></div>
+    <div class="absolute h-14 w-14 bg-primary/20 top-2/3 end-80 -z-1 rounded-full animate-ping"></div>
 
+    <div class="px-6 pt-20 overflow-hidden" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="800">
+        <div class="relative">
+            <div class="absolute left-1/2 top-4 h-[1026px] w-[1026px] -translate-x-1/3 stroke-default-300/70 [mask-image:linear-gradient(to_bottom,white_20%,transparent_75%)] sm:top-16 sm:-translate-x-1/2 lg:-top-16 lg:ml-12 xl:-top-14 xl:ml-0">
+                <svg viewBox="0 0 1026 1026" fill="none" aria-hidden="true" class="absolute inset-0 h-full w-full animate-spin-slow">
+                    <path class="stroke-white/10" d="M1025 513c0 282.77-229.23 512-512 512S1 795.77 1 513 230.23 1 513 1s512 229.23 512 512Z" stroke-opacity="0.7"></path>
+                    <path d="M513 1025C230.23 1025 1 795.77 1 513" stroke="url(#:S2:-gradient-1)" stroke-linecap="round"></path>
+                    <defs>
+                        <linearGradient id=":S2:-gradient-1" x1="1" y1="513" x2="1" y2="1025" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#7c3aed"></stop>
+                            <stop offset="1" stop-color="#7c3aed" stop-opacity="0"></stop>
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <svg viewBox="0 0 1026 1026" fill="none" aria-hidden="true" class="absolute inset-0 h-full w-full animate-spin-reverse-slower">
+                    <path class="stroke-white/10" d="M913 513c0 220.914-179.086 400-400 400S113 733.914 113 513s179.086-400 400-400 400 179.086 400 400Z" stroke-opacity="0.7"></path>
+                    <path d="M913 513c0 220.914-179.086 400-400 400" stroke="url(#:S2:-gradient-2)" stroke-linecap="round"></path>
+                    <defs>
+                        <linearGradient id=":S2:-gradient-2" x1="913" y1="513" x2="913" y2="913" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#7c3aed"></stop>
+                            <stop offset="1" stop-color="#7c3aed" stop-opacity="0"></stop>
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+
+            <div class="container">
+                <div class="py-14 text-center relative">
+                    <div class="flex justify-center">
+                        <div class="max-w-2xl">
+                            <h2 class="md:text-6xl/tight text-5xl text-default-100 font-semibold mb-6">Start building today</h2>
+                            <p class="text-base text-default-200 font-medium px-5">Our app eliminates the need for complex spreadsheets, endless email threads, empowering businesses to achieve greater efficiency.</p>
+                            <div class="backdrop-blur-2xl bg-white/10 rounded-md max-w-xl mx-auto">
+                                <form class="w-full flex items-center justify-between mt-7 ">
+                                    <input type="email" name="email" id="email" class="w-full p-4 border-0 focus:outline-none focus:ring-0 text-sm text-white placeholder:text-white bg-transparent" placeholder="Enter Your Email" autocomplete="off">
+                                    <button class="py-2 px-6 me-2 border-0 text-white font-semibold text-sm rounded-md backdrop-blur-2xl bg-primary hover:bg-primary-hover hover:text-white transition-all duration-500">
+                                        <div class="flex items-center justify-center gap-1">
+                                            <span>Join Waitlist</span>
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </div>
+                                    </button>
+                                </form>
+                            </div>
+                            <div class="flex flex-wrap items-center justify-center gap-6 mt-10">
+                                <a href="#" class="inline-flex items-center justify-center gap-2 bg-primary text-white py-2 px-6 rounded-full hover:bg-primary-hover transition-all duration-300">Get start free
+                                    <i data-lucide="move-right" class="h-5 w-5"></i>
+                                </a>
+
+                                <a href="#" class="inline-flex items-center justify-center gap-2 border border-white/10 text-white py-2 px-6 rounded-full hover:bg-primary-hover transition-all duration-300">More Tools <i data-lucide="move-right" class="h-5 w-5"></i>
+                                </a>
+                            </div>
+                            <p class="text-sm font-medium text-default-400 mt-5">Get 75 mins of upload for free every month</p>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- end container -->
+        </div><!-- end relative -->
+    </div>
+</section>
 
     <footer class="bg-default-950/40 backdrop-blur-3xl">
         <div class="container py-20">

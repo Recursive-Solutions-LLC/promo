@@ -1896,6 +1896,10 @@ select{
 .bg-yellow-500\/20{
     background-color: rgb(234 179 8 / 0.2);
 }
+.bg-slate-600{
+    --tw-bg-opacity: 1;
+    background-color: rgb(71 85 105 / var(--tw-bg-opacity));
+}
 .bg-opacity-50{
     --tw-bg-opacity: 0.5;
 }
@@ -2985,20 +2989,14 @@ select{
     .lg\:hidden{
         display: none;
     }
-    .lg\:h-32{
-        height: 8rem;
+    .lg\:h-24{
+        height: 6rem;
     }
     .lg\:h-\[500px\]{
         height: 500px;
     }
     .lg\:h-screen{
         height: 100vh;
-    }
-    .lg\:h-28{
-        height: 7rem;
-    }
-    .lg\:h-24{
-        height: 6rem;
     }
     .lg\:w-1\/2{
         width: 50%;

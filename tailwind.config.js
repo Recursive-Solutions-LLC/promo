@@ -23,8 +23,8 @@ module.exports = {
 
         extend: {
             colors: {
-                'primary': colors.violet["600"],
-                'primary-hover': colors.violet["700"],
+                'primary': "#80ED99",
+                'primary-hover': "#22577A",
 
                 default: colors.slate
             },

@@ -106,9 +106,6 @@
       <div class="backdrop-blur-2xl bg-default-950/40 rounded-2xl overflow-hidden max-w-5xl mx-auto">
         <div class="flex flex-col h-full p-10">
           <div class="pb-6">
-            <h4 class="text-5xl font-bold text-primary emb-4 text-center">Thanks for your trust, we are exited to start
-              doing business with you</h4>
-            <p class="text-default-300 text-center text-lg">A member of our team will be in touch with you soon.</p>
             <div class="mx-auto w-full max-w-md p-6" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="1000">
               <form id="multi-step-form">
                 <!-- Step 1 -->
@@ -146,7 +143,7 @@
                   </div>
                   <div class="mb-4">
                     <label for="website" class="block text-gray-300 font-medium mb-2">Website</label>
-                    <input type="url" id="website" name="website"
+                    <input type="text" id="website" name="website"
                       class="w-full px-4 py-3 rounded-lg bg-gray-700 text-white border border-gray-600 focus:ring-primary focus:border-primary">
                   </div>
                   <div class="mb-4">
@@ -334,12 +331,13 @@
                       class="bg-primary text-white py-2 px-6 rounded-full hover:bg-primary-hover transition-all duration-300">Submit</button>
                   </div>
                 </div>
-                <!-- Thank You Screen -->
-                <div class="form-step hidden" id="thank-you-screen">
+                <!-- Step nine -->
+                <div class="form-step hidden">
                   <h1 class="text-3xl font-medium mb-4 text-white text-center">Thank You!</h1>
                   <p class="text-white text-center">Thanks for filling out the form. An expert will be in contact with
                     you soon.</p>
                 </div>
+                
               </form>
             </div>
           </div>
@@ -354,13 +352,14 @@
 
     function showStep(step) {
       formSteps.forEach((stepElement, index) => {
+        console.log(stepElement, index)
         stepElement.classList.toggle("hidden", index !== step);
       });
     }
 
     function nextStep() {
       if (validateForm()) {
-        if (currentStep < formSteps.length - 1) {
+        if (currentStep < formSteps.length ) {
           currentStep++;
           showStep(currentStep);
         }
@@ -370,6 +369,7 @@
     function prevStep() {
       if (currentStep > 0) {
         currentStep--;
+        console.log(currentStep)
         showStep(currentStep);
       }
     }
@@ -453,21 +453,14 @@
           return response.text(); // Use `.text()` instead of `.json()` for non-JSON responses
         })
         .then(data => {
+          nextStep()
           console.log('Success:', data);
-          // Show the thank you screen
-          showThankYouScreen();
         })
         .catch((error) => {
           console.error('Error:', error);
         });
     });
 
-    function showThankYouScreen() {
-      currentStep = formSteps.length;
-      showStep(currentStep);
-    }
-
-    showStep(currentStep);
   </script>
 
 

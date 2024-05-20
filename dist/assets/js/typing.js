@@ -1,10 +1,4 @@
-/*
-Template Name: WebAi - AI Startup & Technology Landing Page HTML Template
-Version: 1.0
-Author: coderthemes
-Email: support@coderthemes.com
-File: typing.js
-*/
+
 
 
 function init() {

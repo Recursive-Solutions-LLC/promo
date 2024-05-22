@@ -991,6 +991,12 @@ select{
 .top-auto{
     top: auto;
 }
+.left-0{
+    left: 0px;
+}
+.right-0{
+    right: 0px;
+}
 .-z-10{
     z-index: -10;
 }
@@ -1143,6 +1149,23 @@ select{
 .h-px{
     height: 1px;
 }
+.h-auto{
+    height: auto;
+}
+.h-fit{
+    height: -moz-fit-content;
+    height: fit-content;
+}
+.h-max{
+    height: -moz-max-content;
+    height: max-content;
+}
+.h-5\/6{
+    height: 83.333333%;
+}
+.h-96{
+    height: 24rem;
+}
 .min-h-full{
     min-height: 100%;
 }
@@ -1182,6 +1205,25 @@ select{
 .w-full{
     width: 100%;
 }
+.w-4\/5{
+    width: 80%;
+}
+.w-11\/12{
+    width: 91.666667%;
+}
+.w-10\/12{
+    width: 83.333333%;
+}
+.w-80{
+    width: 20rem;
+}
+.w-96{
+    width: 24rem;
+}
+.w-fit{
+    width: -moz-fit-content;
+    width: fit-content;
+}
 .min-w-full{
     min-width: 100%;
 }
@@ -1202,6 +1244,10 @@ select{
 }
 .max-w-xl{
     max-width: 36rem;
+}
+.max-w-fit{
+    max-width: -moz-fit-content;
+    max-width: fit-content;
 }
 .flex-shrink-0{
     flex-shrink: 0;
@@ -1505,6 +1551,18 @@ select{
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
 }
+.py-10{
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+}
+.px-10{
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+}
+.px-8{
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
 .pb-12{
     padding-bottom: 3rem;
 }
@@ -1533,6 +1591,17 @@ select{
 }
 .pt-\[72px\]{
     padding-top: 72px;
+}
+.ps-10{
+    -webkit-padding-start: 2.5rem;
+            padding-inline-start: 2.5rem;
+}
+.ps-12{
+    -webkit-padding-start: 3rem;
+            padding-inline-start: 3rem;
+}
+.pt-10{
+    padding-top: 2.5rem;
 }
 .text-center{
     text-align: center;
@@ -1841,8 +1910,17 @@ select{
     .lg\:h-\[500px\]{
         height: 500px;
     }
+    .lg\:h-full{
+        height: 100%;
+    }
+    .lg\:h-96{
+        height: 24rem;
+    }
     .lg\:w-\[500px\]{
         width: 500px;
+    }
+    .lg\:w-96{
+        width: 24rem;
     }
     .lg\:basis-auto{
         flex-basis: auto;
@@ -1856,8 +1934,17 @@ select{
     .lg\:border-none{
         border-style: none;
     }
+    .lg\:p-10{
+        padding: 2.5rem;
+    }
     .lg\:pt-0{
         padding-top: 0px;
+    }
+    .lg\:pt-10{
+        padding-top: 2.5rem;
+    }
+    .lg\:pb-10{
+        padding-bottom: 2.5rem;
     }
 }
 @media (min-width: 1280px){

@@ -1600,9 +1600,6 @@ select{
     -webkit-padding-start: 3rem;
             padding-inline-start: 3rem;
 }
-.pt-10{
-    padding-top: 2.5rem;
-}
 .text-center{
     text-align: center;
 }
@@ -1913,9 +1910,6 @@ select{
     .lg\:h-full{
         height: 100%;
     }
-    .lg\:h-96{
-        height: 24rem;
-    }
     .lg\:w-\[500px\]{
         width: 500px;
     }
@@ -1934,17 +1928,8 @@ select{
     .lg\:border-none{
         border-style: none;
     }
-    .lg\:p-10{
-        padding: 2.5rem;
-    }
     .lg\:pt-0{
         padding-top: 0px;
-    }
-    .lg\:pt-10{
-        padding-top: 2.5rem;
-    }
-    .lg\:pb-10{
-        padding-bottom: 2.5rem;
     }
 }
 @media (min-width: 1280px){

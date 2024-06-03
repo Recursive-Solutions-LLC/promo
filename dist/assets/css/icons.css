@@ -22106,3 +22106,413 @@
     }
 }
 /*# sourceMappingURL=materialdesignicons.css.map */
+}
+
+.mdi-wrench-check-outline::before {
+    content: "\F1B90";
+}
+
+.mdi-wrench-clock::before {
+    content: "\F19A3";
+}
+
+.mdi-wrench-clock-outline::before {
+    content: "\F1B93";
+}
+
+.mdi-wrench-cog::before {
+    content: "\F1B91";
+}
+
+.mdi-wrench-cog-outline::before {
+    content: "\F1B92";
+}
+
+.mdi-wrench-outline::before {
+    content: "\F0BE0";
+}
+
+.mdi-xamarin::before {
+    content: "\F0845";
+}
+
+.mdi-xml::before {
+    content: "\F05C0";
+}
+
+.mdi-xmpp::before {
+    content: "\F07FF";
+}
+
+.mdi-yahoo::before {
+    content: "\F0B4F";
+}
+
+.mdi-yeast::before {
+    content: "\F05C1";
+}
+
+.mdi-yin-yang::before {
+    content: "\F0680";
+}
+
+.mdi-yoga::before {
+    content: "\F117C";
+}
+
+.mdi-youtube::before {
+    content: "\F05C3";
+}
+
+.mdi-youtube-gaming::before {
+    content: "\F0848";
+}
+
+.mdi-youtube-studio::before {
+    content: "\F0847";
+}
+
+.mdi-youtube-subscription::before {
+    content: "\F0D40";
+}
+
+.mdi-youtube-tv::before {
+    content: "\F0448";
+}
+
+.mdi-yurt::before {
+    content: "\F1516";
+}
+
+.mdi-z-wave::before {
+    content: "\F0AEA";
+}
+
+.mdi-zend::before {
+    content: "\F0AEB";
+}
+
+.mdi-zigbee::before {
+    content: "\F0D41";
+}
+
+.mdi-zip-box::before {
+    content: "\F05C4";
+}
+
+.mdi-zip-box-outline::before {
+    content: "\F0FFA";
+}
+
+.mdi-zip-disk::before {
+    content: "\F0A23";
+}
+
+.mdi-zodiac-aquarius::before {
+    content: "\F0A7D";
+}
+
+.mdi-zodiac-aries::before {
+    content: "\F0A7E";
+}
+
+.mdi-zodiac-cancer::before {
+    content: "\F0A7F";
+}
+
+.mdi-zodiac-capricorn::before {
+    content: "\F0A80";
+}
+
+.mdi-zodiac-gemini::before {
+    content: "\F0A81";
+}
+
+.mdi-zodiac-leo::before {
+    content: "\F0A82";
+}
+
+.mdi-zodiac-libra::before {
+    content: "\F0A83";
+}
+
+.mdi-zodiac-pisces::before {
+    content: "\F0A84";
+}
+
+.mdi-zodiac-sagittarius::before {
+    content: "\F0A85";
+}
+
+.mdi-zodiac-scorpio::before {
+    content: "\F0A86";
+}
+
+.mdi-zodiac-taurus::before {
+    content: "\F0A87";
+}
+
+.mdi-zodiac-virgo::before {
+    content: "\F0A88";
+}
+
+.mdi-blank::before {
+    content: "\F68C";
+    visibility: hidden;
+}
+
+.mdi-18px.mdi-set,
+.mdi-18px.mdi:before {
+    font-size: 18px;
+}
+
+.mdi-24px.mdi-set,
+.mdi-24px.mdi:before {
+    font-size: 24px;
+}
+
+.mdi-36px.mdi-set,
+.mdi-36px.mdi:before {
+    font-size: 36px;
+}
+
+.mdi-48px.mdi-set,
+.mdi-48px.mdi:before {
+    font-size: 48px;
+}
+
+.mdi-dark:before {
+    color: rgba(0, 0, 0, 0.54);
+}
+
+.mdi-dark.mdi-inactive:before {
+    color: rgba(0, 0, 0, 0.26);
+}
+
+.mdi-light:before {
+    color: white;
+}
+
+.mdi-light.mdi-inactive:before {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.mdi-rotate-45 {
+    /*
+          // Not included in production
+          &.mdi-flip-h:before {
+              -webkit-transform: scaleX(-1) rotate(45deg);
+              transform: scaleX(-1) rotate(45deg);
+              filter: FlipH;
+              -ms-filter: "FlipH";
+          }
+          &.mdi-flip-v:before {
+              -webkit-transform: scaleY(-1) rotate(45deg);
+              -ms-transform: rotate(45deg);
+              transform: scaleY(-1) rotate(45deg);
+              filter: FlipV;
+              -ms-filter: "FlipV";
+          }
+          */
+}
+
+.mdi-rotate-45:before {
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.mdi-rotate-90 {
+    /*
+          // Not included in production
+          &.mdi-flip-h:before {
+              -webkit-transform: scaleX(-1) rotate(90deg);
+              transform: scaleX(-1) rotate(90deg);
+              filter: FlipH;
+              -ms-filter: "FlipH";
+          }
+          &.mdi-flip-v:before {
+              -webkit-transform: scaleY(-1) rotate(90deg);
+              -ms-transform: rotate(90deg);
+              transform: scaleY(-1) rotate(90deg);
+              filter: FlipV;
+              -ms-filter: "FlipV";
+          }
+          */
+}
+
+.mdi-rotate-90:before {
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.mdi-rotate-135 {
+    /*
+          // Not included in production
+          &.mdi-flip-h:before {
+              -webkit-transform: scaleX(-1) rotate(135deg);
+              transform: scaleX(-1) rotate(135deg);
+              filter: FlipH;
+              -ms-filter: "FlipH";
+          }
+          &.mdi-flip-v:before {
+              -webkit-transform: scaleY(-1) rotate(135deg);
+              -ms-transform: rotate(135deg);
+              transform: scaleY(-1) rotate(135deg);
+              filter: FlipV;
+              -ms-filter: "FlipV";
+          }
+          */
+}
+
+.mdi-rotate-135:before {
+    -webkit-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    transform: rotate(135deg);
+}
+
+.mdi-rotate-180 {
+    /*
+          // Not included in production
+          &.mdi-flip-h:before {
+              -webkit-transform: scaleX(-1) rotate(180deg);
+              transform: scaleX(-1) rotate(180deg);
+              filter: FlipH;
+              -ms-filter: "FlipH";
+          }
+          &.mdi-flip-v:before {
+              -webkit-transform: scaleY(-1) rotate(180deg);
+              -ms-transform: rotate(180deg);
+              transform: scaleY(-1) rotate(180deg);
+              filter: FlipV;
+              -ms-filter: "FlipV";
+          }
+          */
+}
+
+.mdi-rotate-180:before {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.mdi-rotate-225 {
+    /*
+          // Not included in production
+          &.mdi-flip-h:before {
+              -webkit-transform: scaleX(-1) rotate(225deg);
+              transform: scaleX(-1) rotate(225deg);
+              filter: FlipH;
+              -ms-filter: "FlipH";
+          }
+          &.mdi-flip-v:before {
+              -webkit-transform: scaleY(-1) rotate(225deg);
+              -ms-transform: rotate(225deg);
+              transform: scaleY(-1) rotate(225deg);
+              filter: FlipV;
+              -ms-filter: "FlipV";
+          }
+          */
+}
+
+.mdi-rotate-225:before {
+    -webkit-transform: rotate(225deg);
+    -ms-transform: rotate(225deg);
+    transform: rotate(225deg);
+}
+
+.mdi-rotate-270 {
+    /*
+          // Not included in production
+          &.mdi-flip-h:before {
+              -webkit-transform: scaleX(-1) rotate(270deg);
+              transform: scaleX(-1) rotate(270deg);
+              filter: FlipH;
+              -ms-filter: "FlipH";
+          }
+          &.mdi-flip-v:before {
+              -webkit-transform: scaleY(-1) rotate(270deg);
+              -ms-transform: rotate(270deg);
+              transform: scaleY(-1) rotate(270deg);
+              filter: FlipV;
+              -ms-filter: "FlipV";
+          }
+          */
+}
+
+.mdi-rotate-270:before {
+    -webkit-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    transform: rotate(270deg);
+}
+
+.mdi-rotate-315 {
+    /*
+          // Not included in production
+          &.mdi-flip-h:before {
+              -webkit-transform: scaleX(-1) rotate(315deg);
+              transform: scaleX(-1) rotate(315deg);
+              filter: FlipH;
+              -ms-filter: "FlipH";
+          }
+          &.mdi-flip-v:before {
+              -webkit-transform: scaleY(-1) rotate(315deg);
+              -ms-transform: rotate(315deg);
+              transform: scaleY(-1) rotate(315deg);
+              filter: FlipV;
+              -ms-filter: "FlipV";
+          }
+          */
+}
+
+.mdi-rotate-315:before {
+    -webkit-transform: rotate(315deg);
+    -ms-transform: rotate(315deg);
+    transform: rotate(315deg);
+}
+
+.mdi-flip-h:before {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
+
+.mdi-flip-v:before {
+    -webkit-transform: scaleY(-1);
+    transform: scaleY(-1);
+    filter: FlipV;
+    -ms-filter: "FlipV";
+}
+
+.mdi-spin:before {
+    -webkit-animation: mdi-spin 2s infinite linear;
+    animation: mdi-spin 2s infinite linear;
+}
+
+@-webkit-keyframes mdi-spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
+    }
+}
+
+@keyframes mdi-spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
+    }
+}
+
+/*# sourceMappingURL=materialdesignicons.css.map */

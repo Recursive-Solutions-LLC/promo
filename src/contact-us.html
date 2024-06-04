@@ -24,9 +24,20 @@
 
   <!-- Animation on Scroll css -->
   <link href="assets/libs/aos/aos.css" rel="stylesheet" type="text/css">
-  <!-- Pixel Code for https://overtracking.com/ -->
-<script defer src="https://overtracking.com/p/NVAjLY4VMWMf3F3w"></script>
-<!-- END Pixel Code -->
+<!-- Hotjar Tracking Code for https://octo.recursivesolutions.net/ -->
+
+<!-- Begin Inspectlet Asynchronous Code -->
+<script type="text/javascript">
+  (function() {
+  var insp_ab_loader = true; // set to false to disable A/B optimized loader
+  window.__insp = window.__insp || [];
+  __insp.push(['wid', 1625996496]);
+  var ldinsp = function(){
+  if(typeof window.__inspld != "undefined") return; window.__inspld = 1; var insp = document.createElement('script'); insp.type = 'text/javascript'; insp.async = true; insp.id = "inspsync"; insp.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://cdn.inspectlet.com/inspectlet.js?wid=1625996496&r=' + Math.floor(new Date().getTime()/3600000); var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(insp, x);if(typeof insp_ab_loader != "undefined" && insp_ab_loader){ var adlt = function(){ var e = document.getElementById('insp_abl'); if(e){ e.parentNode.removeChild(e); __insp.push(['ab_timeout']); }}; var adlc = "body{ visibility: hidden !important; }"; var adln = typeof insp_ab_loader_t != "undefined" ? insp_ab_loader_t : 800; insp.onerror = adlt; var abti = setTimeout(adlt, adln); window.__insp_abt = abti; var abl = document.createElement('style'); abl.id = "insp_abl"; abl.type = "text/css"; if(abl.styleSheet) abl.styleSheet.cssText = adlc; else abl.appendChild(document.createTextNode(adlc)); document.head.appendChild(abl); } };
+  setTimeout(ldinsp, 0);
+  })();
+  </script>
+  <!-- End Inspectlet Asynchronous Code -->
 </head>
 
 <body class="bg-slate-900">
@@ -61,32 +72,41 @@
   <!-- Navbar Start -->
   <header id="navbar-sticky" class="navbar">
     <div class="container">
-      <nav>
-        <!-- Navbar Brand Logo -->
-        <a href="/" class="logo">
-          <img src="assets/images/logo.svg" class="h-10" alt="WebAi Logo">
-        </a>
+        <nav>
+            <!-- Navbar Brand Logo -->
+            <a href="/" class="logo">
+                <img src="assets/images/logo.svg" class="h-10" alt="OctoLink Logo">
+            </a>
 
-        <!-- Moblie Menu Toggle Button (Offcanvas Button) -->
-        <div class="lg:hidden flex items-center ms-auto px-2.5">
-          <button
-            class="hs-collapse-toggle inline-flex items-center justify-center h-9 w-12 rounded-md border border-white/20 bg-default-100/5"
-            type="button" id="hs-unstyled-collapse" data-hs-collapse="#mobileMenu" data-hs-type="collapse">
-            <i data-lucide="menu" class="h-5 w-5 stroke-white"></i>
-          </button>
-        </div>
+            <!-- Moblie Menu Toggle Button (Offcanvas Button) -->
+            <div class="lg:hidden flex items-center ms-auto px-2.5">
+                <button
+                    class="hs-collapse-toggle inline-flex items-center justify-center h-9 w-12 rounded-md border border-white/20 bg-default-100/5"
+                    type="button" id="hs-unstyled-collapse" data-hs-collapse="#mobileMenu" data-hs-type="collapse">
+                    <i data-lucide="menu" class="h-5 w-5 stroke-white"></i>
+                </button>
+            </div>
 
-        <!-- Nevigation Menu -->
-
-        <!-- Download Button -->
-        <div class="hidden lg:flex items-center">
-          <a href="#"
-            class="inline-flex items-center justify-center gap-2 bg-primary text-white py-2 px-6 rounded-full hover:bg-primary-hover transition-all duration-300"><i
-              data-lucide="send" class="h-5 w-5 me-2"></i> Speak to an Expert</a>
-        </div>
-      </nav><!-- end nav -->
+            <!-- Nevigation Menu -->
+            <div id="mobileMenu"
+                class="hs-collapse transition-all duration-300 lg:basis-auto basis-full grow hidden lg:flex items-center justify-center mx-auto mt-2 lg:mt-0">
+                <!-- Download Button -->
+                <div
+                    class="lg:hidden flex items-center pt-4 mt-4 lg:pt-0 lg:mt-0 border-t border-white/10 lg:border-none">
+                    <a href="schedule.html"
+                        class="inline-flex items-center justify-center gap-2 bg-primary text-white py-2 px-6 rounded-full hover:bg-slate-900 transition-all duration-3"><i
+                            data-lucide="send" class="h-5 w-5 me-2"></i> Speak to an Expert</a>
+                </div>
+            </div>
+            <!-- Download Button -->
+            <div class="hidden lg:flex items-center">
+                <a href="schedule.html"
+                    class="inline-flex items-center justify-center gap-2 bg-primary text-white py-2 px-6 rounded-full hover:bg-slate-900 transition-all duration-300"><i
+                        data-lucide="send" class="h-5 w-5 me-2"></i> Speak to an Expert</a>
+            </div>
+        </nav><!-- end nav -->
     </div>
-  </header>
+</header>
 
   <section class="py-20 flex flex-col items-center px-0 w-full lg:h-100">
     <div class="container py-5">
@@ -107,19 +127,19 @@
               
                 <div class="flex flex-col h-full lg:p-10">
                     <div class="mx-auto w-full max-w-md p-6" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="1000">
-                        <form id="contact-form">
+                        <form inspectlet-form-analytics="contact-form" id="contact-form" name="contact-form">
                             <div class="mb-4">
                                 <label for="full-name" class="block text-gray-300 font-medium mb-2">Full Name</label>
                                 <input type="text" id="full-name" name="full-name"
                                     class="w-full px-4 py-3 rounded-lg bg-gray-700 text-white border border-gray-600 focus:ring-primary focus:border-primary"
-                                    required>
+                                  required>
                                 <span class="text-red-500 hidden" id="error-full-name">Please enter your full name.</span>
                             </div>
                             <div class="mb-4">
                               <label for="email" class="block text-gray-300 font-medium mb-2">Email</label>
                               <input type="email" id="email" name="email"
                                 class="w-full px-4 py-3 rounded-lg bg-gray-700 text-white border border-gray-600 focus:ring-primary focus:border-primary"
-                                required>
+                               >
                               <span class="text-red-500 hidden" id="error-email">Please enter a valid email address.</span>
                             </div>
                        
@@ -127,7 +147,7 @@
                                 <label for="phone" class="block text-gray-300 font-medium mb-2">Phone Number</label>
                                 <input type="tel" id="phone" name="phone" 
                                     class="w-full px-4 py-3 rounded-lg bg-gray-700 text-white border border-gray-600 focus:ring-primary focus:border-primary"
-                                    required>
+                                   required >
                                 <span class="text-red-500 hidden" id="error-phone">Please enter a valid phone number.</span>
                             </div>
                             <div class="mb-4">

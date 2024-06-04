@@ -961,6 +961,9 @@ select{
 .left-1\/2{
     left: 50%;
 }
+.right-3{
+    right: 0.75rem;
+}
 .start-0{
     inset-inline-start: 0px;
 }
@@ -982,6 +985,9 @@ select{
 .top-2\/3{
     top: 66.666667%;
 }
+.top-3{
+    top: 0.75rem;
+}
 .top-4{
     top: 1rem;
 }
@@ -999,6 +1005,9 @@ select{
 }
 .z-50{
     z-index: 50;
+}
+.z-\[60\]{
+    z-index: 60;
 }
 .m-auto{
     margin: auto;
@@ -1074,6 +1083,9 @@ select{
 .mt-8{
     margin-top: 2rem;
 }
+.mt-auto{
+    margin-top: auto;
+}
 .block{
     display: block;
 }
@@ -1122,6 +1134,9 @@ select{
 .h-5{
     height: 1.25rem;
 }
+.h-6{
+    height: 1.5rem;
+}
 .h-8{
     height: 2rem;
 }
@@ -1149,6 +1164,9 @@ select{
 .min-h-full{
     min-height: 100%;
 }
+.min-h-screen{
+    min-height: 100vh;
+}
 .w-11{
     width: 2.75rem;
 }
@@ -1166,6 +1184,9 @@ select{
 }
 .w-5{
     width: 1.25rem;
+}
+.w-6{
+    width: 1.5rem;
 }
 .w-60{
     width: 15rem;
@@ -1208,6 +1229,9 @@ select{
 }
 .flex-shrink-0{
     flex-shrink: 0;
+}
+.flex-grow{
+    flex-grow: 1;
 }
 .grow{
     flex-grow: 1;
@@ -1295,6 +1319,9 @@ select{
 }
 .overflow-hidden{
     overflow: hidden;
+}
+.overflow-y-auto{
+    overflow-y: auto;
 }
 .rounded{
     border-radius: 0.25rem;
@@ -1431,6 +1458,9 @@ select{
 .p-10{
     padding: 2.5rem;
 }
+.p-2{
+    padding: 0.5rem;
+}
 .p-3{
     padding: 0.75rem;
 }
@@ -1558,6 +1588,10 @@ select{
     font-size: 3rem;
     line-height: 1;
 }
+.text-7xl{
+    font-size: 4.5rem;
+    line-height: 1;
+}
 .text-base{
     font-size: 1rem;
     line-height: 1.5rem;
@@ -1639,11 +1673,19 @@ select{
     --tw-text-opacity: 1;
     color: rgb(234 179 8 / var(--tw-text-opacity));
 }
+.underline{
+    text-decoration-line: underline;
+}
 .opacity-0{
     opacity: 0;
 }
 .opacity-100{
     opacity: 1;
+}
+.shadow-lg{
+    --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 .blur{
     --tw-blur: blur(8px);
@@ -1723,6 +1765,9 @@ select{
     --tw-bg-opacity: 1;
     background-color: rgb(34 87 122 / var(--tw-bg-opacity));
 }
+.hover\:bg-red-600\/30:hover{
+    background-color: rgb(220 38 38 / 0.3);
+}
 .hover\:bg-slate-900:hover{
     --tw-bg-opacity: 1;
     background-color: rgb(15 23 42 / var(--tw-bg-opacity));
@@ -1779,6 +1824,18 @@ select{
 .group:hover .group-hover\:opacity-100{
     opacity: 1;
 }
+.open.hs-overlay-open\:mt-0{
+    margin-top: 0px;
+}
+.open.hs-overlay-open\:opacity-100{
+    opacity: 1;
+}
+.open .hs-overlay-open\:mt-0{
+    margin-top: 0px;
+}
+.open .hs-overlay-open\:opacity-100{
+    opacity: 1;
+}
 @media (prefers-color-scheme: dark){
     .dark\:bg-opacity-80{
         --tw-bg-opacity: 0.8;
@@ -1816,6 +1873,10 @@ select{
     .md\:text-6xl\/tight{
         font-size: 3.75rem;
         line-height: 1.25;
+    }
+    .md\:text-8xl{
+        font-size: 6rem;
+        line-height: 1;
     }
     .md\:text-lg{
         font-size: 1.125rem;

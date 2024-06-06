@@ -24,6 +24,20 @@
 
   <!-- Animation on Scroll css -->
   <link href="assets/libs/aos/aos.css" rel="stylesheet" type="text/css">
+<!-- Hotjar Tracking Code for https://octo.recursivesolutions.net/ -->
+
+<!-- Begin Inspectlet Asynchronous Code -->
+<script type="text/javascript">
+  (function() {
+  var insp_ab_loader = true; // set to false to disable A/B optimized loader
+  window.__insp = window.__insp || [];
+  __insp.push(['wid', 1625996496]);
+  var ldinsp = function(){
+  if(typeof window.__inspld != "undefined") return; window.__inspld = 1; var insp = document.createElement('script'); insp.type = 'text/javascript'; insp.async = true; insp.id = "inspsync"; insp.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://cdn.inspectlet.com/inspectlet.js?wid=1625996496&r=' + Math.floor(new Date().getTime()/3600000); var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(insp, x);if(typeof insp_ab_loader != "undefined" && insp_ab_loader){ var adlt = function(){ var e = document.getElementById('insp_abl'); if(e){ e.parentNode.removeChild(e); __insp.push(['ab_timeout']); }}; var adlc = "body{ visibility: hidden !important; }"; var adln = typeof insp_ab_loader_t != "undefined" ? insp_ab_loader_t : 800; insp.onerror = adlt; var abti = setTimeout(adlt, adln); window.__insp_abt = abti; var abl = document.createElement('style'); abl.id = "insp_abl"; abl.type = "text/css"; if(abl.styleSheet) abl.styleSheet.cssText = adlc; else abl.appendChild(document.createTextNode(adlc)); document.head.appendChild(abl); } };
+  setTimeout(ldinsp, 0);
+  })();
+  </script>
+  <!-- End Inspectlet Asynchronous Code -->
 </head>
 
 <body class="bg-slate-900">
@@ -64,26 +78,35 @@
           <img src="assets/images/logo.svg" class="h-10" alt="WebAi Logo">
         </a>
 
-        <!-- Moblie Menu Toggle Button (Offcanvas Button) -->
-        <div class="lg:hidden flex items-center ms-auto px-2.5">
-          <button
-            class="hs-collapse-toggle inline-flex items-center justify-center h-9 w-12 rounded-md border border-white/20 bg-default-100/5"
-            type="button" id="hs-unstyled-collapse" data-hs-collapse="#mobileMenu" data-hs-type="collapse">
-            <i data-lucide="menu" class="h-5 w-5 stroke-white"></i>
-          </button>
-        </div>
+            <!-- Moblie Menu Toggle Button (Offcanvas Button) -->
+            <div class="lg:hidden flex items-center ms-auto px-2.5">
+                <button
+                    class="hs-collapse-toggle inline-flex items-center justify-center h-9 w-12 rounded-md border border-white/20 bg-default-100/5"
+                    type="button" id="hs-unstyled-collapse" data-hs-collapse="#mobileMenu" data-hs-type="collapse">
+                    <i data-lucide="menu" class="h-5 w-5 stroke-white"></i>
+                </button>
+            </div>
 
-        <!-- Nevigation Menu -->
-
-        <!-- Download Button -->
-        <div class="hidden lg:flex items-center">
-          <a href="#"
-            class="inline-flex items-center justify-center gap-2 bg-primary text-white py-2 px-6 rounded-full hover:bg-primary-hover transition-all duration-300"><i
-              data-lucide="send" class="h-5 w-5 me-2"></i> Speak to an Expert</a>
-        </div>
-      </nav><!-- end nav -->
+            <!-- Nevigation Menu -->
+            <div id="mobileMenu"
+                class="hs-collapse transition-all duration-300 lg:basis-auto basis-full grow hidden lg:flex items-center justify-center mx-auto mt-2 lg:mt-0">
+                <!-- Download Button -->
+                <div
+                    class="lg:hidden flex items-center pt-4 mt-4 lg:pt-0 lg:mt-0 border-t border-white/10 lg:border-none">
+                    <a href="schedule.html"
+                        class="inline-flex items-center justify-center gap-2 bg-primary text-white py-2 px-6 rounded-full hover:bg-slate-900 transition-all duration-3"><i
+                            data-lucide="send" class="h-5 w-5 me-2"></i> Speak to an Expert</a>
+                </div>
+            </div>
+            <!-- Download Button -->
+            <div class="hidden lg:flex items-center">
+                <a href="schedule.html"
+                    class="inline-flex items-center justify-center gap-2 bg-primary text-white py-2 px-6 rounded-full hover:bg-slate-900 transition-all duration-300"><i
+                        data-lucide="send" class="h-5 w-5 me-2"></i> Speak to an Expert</a>
+            </div>
+        </nav><!-- end nav -->
     </div>
-  </header>
+</header>
 
   <style>
     #countdown {
@@ -104,7 +127,6 @@
             </p>
           </div>
         </div>
-      </div>
     </div>
 
     <!-- Countdown Timer Script -->
@@ -191,16 +213,15 @@
             </div>
           </div>
         </div>
-      </div>
     </div>
-  </section>
+</section>
 
-  <script>
+<script>
     document.getElementById('contact-form').addEventListener('submit', function (event) {
-      event.preventDefault();
+        event.preventDefault();
 
-      let formData = new FormData(event.target);
-      let formObject = {};
+        let formData = new FormData(event.target);
+        let formObject = {};
 
       formData.forEach((value, key) => {
         formObject[key] = value;
@@ -232,6 +253,14 @@
         .catch(error => {
           console.error('Form submission error:', error);
         });
+
+        if (!formObject.comments) {
+            formObject.comments = ''; // Assign an empty string if comments are not provided
+        }
+
+        // Here, make an actual request to your endpoint (example).
+        // There should be an endpoint URL for submitting the form.
+
     });
   </script>
 

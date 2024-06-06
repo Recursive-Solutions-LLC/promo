@@ -1,14 +1,14 @@
 {
-  "name": "webai",
+  "name": "OctoLink",
   "version": "1.0",
-  "description": "WebAi - AI Startup & Technology Landing Page HTML Template",
+  "description": "OctoLink - AI Startup & Technology Landing Page HTML Template",
   "main": "index.js",
   "scripts": {
     "start": "gulp ",
     "dev": "gulp dev ",
     "build": "gulp build" 
   },
-  "author": "coderthemes",
+  "author": "Recursive Solutions",
   "private": true,
   "devDependencies": {
     "@tailwindcss/nesting": "^0.0.0-insiders.565cd3e",

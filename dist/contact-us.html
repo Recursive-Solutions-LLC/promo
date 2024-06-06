@@ -5,13 +5,13 @@
   <meta charset="utf-8" />
   <title>Get in touch with us!</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta
-    content="Tailwind CSS AI Startup & Technology Saas & AI Software Landing Page Template, ai agency, ai application, ai business, ai, creative ai art, ai it solutions, modern web ai, multipurpose, saas, nft art, nft software, tailwind css."
-    name="description" />
-  <meta content="coderthemes" name="author" />
+  <meta name="description"
+    content="Discover OctoLink, the leading AI automation and technology solution. Perfect for AI startups, SaaS, and AI software landing pages. Enhance your business efficiency with our advanced tools. Try OctoLink now!" />
+
+  <meta content="Recursive Solutions" name="author" />
 
   <!-- App favicon -->
-  <link rel="shortcut icon" href="assets/images/favicon.ico">
+  <link rel="shortcut icon" href="assets/images/logo.svg">
 
   <!--Swiper slider css-->
   <link href="assets/libs/swiper/swiper-bundle.min.css" rel="stylesheet" type="text/css">
@@ -61,7 +61,7 @@
       <nav>
         <!-- Navbar Brand Logo -->
         <a href="/" class="logo">
-          <img src="assets/images/logo.png" class="h-10" alt="WebAi Logo">
+          <img src="assets/images/logo.svg" class="h-10" alt="WebAi Logo">
         </a>
 
         <!-- Moblie Menu Toggle Button (Offcanvas Button) -->
@@ -85,288 +85,177 @@
     </div>
   </header>
 
+  <style>
+    #countdown {
+      font-size: 1.5rem;
+      color: #ffdd57;
+    }
+  </style>
+  </head>
+
   <section class="py-20 flex flex-col items-center px-0 w-full lg:h-100">
     <div class="container py-5">
-        <div class="text-center relative">
-            <div class="flex justify-center">
-                <div class="max-w-2xl">
-                    <h2 class="md:text-6xl/tight text-5xl text-default-100 font-semibold mb-6">Let's Automate</h2>
-                    <p class="text-base text-default-200 font-medium px-5">
-                        Fill out the form below to receive 1 FREE Automation that will improve your business!
-                    </p>
-                </div>
-            </div>
+      <div class="text-center relative">
+        <div class="flex justify-center">
+          <div class="max-w-2xl">
+            <h2 class="md:text-5xl/tight text-4xl text-default-100 font-semibold mb-6">Unlock Free AI Integration, Speak
+              with an Expert Today!</h2>
+            <p class="text-xl text-default-200 mb-4">⚡️ Limited-time offer! Sale ends in <span id="countdown"></span>
+            </p>
+          </div>
         </div>
+      </div>
     </div>
-    <div class="container">
-        <div class="backdrop-blur-2xl bg-default-950/40 rounded-2xl overflow-hidden max-w-5xl mx-auto">
-            <div class="grid lg:grid-cols-2 gap-10">
-                <div class="ps-4 py-4">
-                    <div class="relative rounded-xl overflow-hidden h-full w-full">
-                        <div class="w-full h-full transform -scale-x-100">
-                            <iframe class="w-full h-full transform -scale-x-100" src="https://www.youtube.com/embed/r9jwGansp1E"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
-                        </div>
-                    </div>
-                </div>
-                <div class="flex flex-col h-full p-10">
-                    <div class="mx-auto w-full max-w-md p-6" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="1000">
-                        <form id="contact-form">
-                            <div class="mb-4">
-                                <label for="full-name" class="block text-gray-300 font-medium mb-2">Full Name</label>
-                                <input type="text" id="full-name" name="full-name"
-                                    class="w-full px-4 py-3 rounded-lg bg-gray-700 text-white border border-gray-600 focus:ring-primary focus:border-primary"
-                                    required>
-                                <span class="text-red-500 hidden" id="error-full-name">Please enter your full name.</span>
-                            </div>
-                            <div class="mb-4">
-                                <label for="email" class="block text-gray-300 font-medium mb-2">Email</label>
-                                <input type="email" id="email" name="email"
-                                    class="w-full px-4 py-3 rounded-lg bg-gray-700 text-white border border-gray-600 focus:ring-primary focus:border-primary"
-                                    required>
-                                <span class="text-red-500 hidden" id="error-email">Please enter a valid email address.</span>
-                            </div>
-                            <div class="mb-4">
-                                <label for="phone" class="block text-gray-300 font-medium mb-2">Phone Number</label>
-                                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}"
-                                    class="w-full px-4 py-3 rounded-lg bg-gray-700 text-white border border-gray-600 focus:ring-primary focus:border-primary"
-                                    required>
-                                <span class="text-red-500 hidden" id="error-phone">Please enter a valid phone number.</span>
-                            </div>
-                            <div class="mb-4">
-                                <label for="comments" class="block text-gray-300 font-medium mb-2">Comments</label>
-                                <textarea id="comments" name="comments"
-                                    class="w-full px-4 py-3 rounded-lg bg-gray-700 text-white border border-gray-600 focus:ring-primary focus:border-primary"></textarea>
-                                <span class="text-red-500 hidden" id="error-comments">Please enter your comments.</span>
-                            </div>
-                            <div class="flex justify-center">
-                                <button type="submit"
-                                    class="bg-primary text-white py-2 px-6 rounded-full hover:bg-primary-hover transition-all duration-300">Submit</button>
-                            </div>
-                        </form>
-                        <div id="thanks-message" class="text-center text-green-500 hidden mt-4">Thanks for your submission!</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 
-<script>
-    document.getElementById('contact-form').addEventListener('submit', function (event) {
-        event.preventDefault();
+    <!-- Countdown Timer Script -->
+    <script>
+      // Set the duration for the countdown (4-6 hours)
+      var countdownDuration = Math.floor(Math.random() * (6 - 4 + 1) + 4) * 5 * 60 * 1000; // Duration in milliseconds
+      var countDownDate = new Date().getTime() + countdownDuration;
 
-        let formData = new FormData(event.target);
-        let formObject = {};
+      // Update the count down every 1 second
+      var x = setInterval(function () {
+        // Get today's date and time
+        var now = new Date().getTime();
 
-        formData.forEach((value, key) => {
-            formObject[key] = value;
-        });
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
 
-        if (!formObject.comments) {
-            formObject.comments = ''; // Assign an empty string if comments are not provided
+        // Time calculations for hours, minutes, and seconds
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Output the result in an element with id="countdown"
+        document.getElementById("countdown").innerHTML = hours + "h " + minutes + "m " + seconds + "s ";
+
+        // If the count down is finished, write some text
+        if (distance < 0) {
+          clearInterval(x);
+          document.getElementById("countdown").innerHTML = "EXPIRED";
         }
+      }, 1000);
+    </script>
 
-        // Here, make an actual request to your endpoint (example).
-        // There should be an endpoint URL for submitting the form.
-        const endpointUrl = 'https://hook.us1.make.com/cdg8re7slv8m7cv1khhvuwqe5xgmyu0f'; // replace with your endpoint URL
 
-        fetch(endpointUrl, {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(formObject),
-        })
-            .then(response => {
-                if (response.ok) {
-                    // Show the thanks message
-                    document.getElementById('thanks-message').classList.remove('hidden');
-                    // Optionally, you can hide the form
-                    document.getElementById('contact-form').classList.add('hidden');
-                } else {
-                    console.error('Form submission failed');
-                }
-            })
-            .catch(error => {
-                console.error('Form submission error:', error);
-            });
-    });
-</script>
-  <section id="home" class="relative overflow-hidden pt-[72px] bg-default-950/40 backdrop-blur-3xl">
-    <div
-      class="absolute h-14 w-14 bg-primary/10 top-2/3 start-80 -z-1 rounded-2xl rounded-tl-none rounded-br-none animate-[spin_10s_linear_infinite]">
-    </div>
-    <div class="absolute h-14 w-14 bg-primary/20 top-2/3 end-80 -z-1 rounded-full animate-ping"></div>
+    <div class="container">
+      <div class="backdrop-blur-2xl bg-default-950/40 rounded-2xl overflow-hidden max-w-5xl mx-auto">
+        <div class="grid lg:grid-cols-2 gap-10">
 
-    <div class="px-6 pt-20 overflow-hidden" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="800">
-      <div class="relative">
-        <div
-          class="absolute left-1/2 top-4 h-[1026px] w-[1026px] -translate-x-1/3 stroke-default-300/70 [mask-image:linear-gradient(to_bottom,white_20%,transparent_75%)] sm:top-16 sm:-translate-x-1/2 lg:-top-16 lg:ml-12 xl:-top-14 xl:ml-0">
-          <svg viewBox="0 0 1026 1026" fill="none" aria-hidden="true"
-            class="absolute inset-0 h-full w-full animate-spin-slow">
-            <path class="stroke-white/10"
-              d="M1025 513c0 282.77-229.23 512-512 512S1 795.77 1 513 230.23 1 513 1s512 229.23 512 512Z"
-              stroke-opacity="0.7"></path>
-            <path d="M513 1025C230.23 1025 1 795.77 1 513" stroke="url(#:S2:-gradient-1)" stroke-linecap="round"></path>
-            <defs>
-              <linearGradient id=":S2:-gradient-1" x1="1" y1="513" x2="1" y2="1025" gradientUnits="userSpaceOnUse">
-                <stop stop-color="#7c3aed"></stop>
-                <stop offset="1" stop-color="#7c3aed" stop-opacity="0"></stop>
-              </linearGradient>
-            </defs>
-          </svg>
-          <svg viewBox="0 0 1026 1026" fill="none" aria-hidden="true"
-            class="absolute inset-0 h-full w-full animate-spin-reverse-slower">
-            <path class="stroke-white/10"
-              d="M913 513c0 220.914-179.086 400-400 400S113 733.914 113 513s179.086-400 400-400 400 179.086 400 400Z"
-              stroke-opacity="0.7"></path>
-            <path d="M913 513c0 220.914-179.086 400-400 400" stroke="url(#:S2:-gradient-2)" stroke-linecap="round">
-            </path>
-            <defs>
-              <linearGradient id=":S2:-gradient-2" x1="913" y1="513" x2="913" y2="913" gradientUnits="userSpaceOnUse">
-                <stop stop-color="#7c3aed"></stop>
-                <stop offset="1" stop-color="#7c3aed" stop-opacity="0"></stop>
-              </linearGradient>
-            </defs>
-          </svg>
-        </div>
-
-        <div class="container">
-          <div class="py-14 text-center relative">
-            <div class="flex justify-center">
-              <div class="max-w-2xl">
-                <h2 class="md:text-6xl/tight text-5xl text-default-100 font-semibold mb-6">Start building today</h2>
-                <p class="text-base text-default-200 font-medium px-5">Our app eliminates the need for complex
-                  spreadsheets, endless email threads, empowering businesses to achieve greater efficiency.</p>
-                <div class="backdrop-blur-2xl bg-white/10 rounded-md max-w-xl mx-auto">
-                  <form class="w-full flex items-center justify-between mt-7 ">
-                    <input type="email" name="email" id="email"
-                      class="w-full p-4 border-0 focus:outline-none focus:ring-0 text-sm text-white placeholder:text-white bg-transparent"
-                      placeholder="Enter Your Email" autocomplete="off">
-                    <button
-                      class="py-2 px-6 me-2 border-0 text-white font-semibold text-sm rounded-md backdrop-blur-2xl bg-primary hover:bg-primary-hover hover:text-white transition-all duration-500">
-                      <div class="flex items-center justify-center gap-1">
-                        <span>Join Waitlist</span>
-                        <i class="fa-solid fa-arrow-right"></i>
-                      </div>
-                    </button>
-                  </form>
+          <div class="flex flex-col h-full lg:p-10">
+            <div class="mx-auto w-full max-w-md p-6" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="1000">
+              <form id="contact-form">
+                <div class="mb-4">
+                  <label for="full-name" class="block text-gray-300 font-medium mb-2">Full Name</label>
+                  <input type="text" id="full-name" name="full-name"
+                    class="w-full px-4 py-3 rounded-lg bg-gray-700 text-white border border-gray-600 focus:ring-primary focus:border-primary"
+                    required>
+                  <span class="text-red-500 hidden" id="error-full-name">Please enter your full name.</span>
                 </div>
-                <div class="flex flex-wrap items-center justify-center gap-6 mt-10">
-                  <a href="#"
-                    class="inline-flex items-center justify-center gap-2 bg-primary text-white py-2 px-6 rounded-full hover:bg-primary-hover transition-all duration-300">Get
-                    start free
-                    <i data-lucide="move-right" class="h-5 w-5"></i>
-                  </a>
-
-                  <a href="#"
-                    class="inline-flex items-center justify-center gap-2 border border-white/10 text-white py-2 px-6 rounded-full hover:bg-primary-hover transition-all duration-300">More
-                    Tools <i data-lucide="move-right" class="h-5 w-5"></i>
-                  </a>
+                <div class="mb-4">
+                  <label for="email" class="block text-gray-300 font-medium mb-2">Email</label>
+                  <input type="email" id="email" name="email"
+                    class="w-full px-4 py-3 rounded-lg bg-gray-700 text-white border border-gray-600 focus:ring-primary focus:border-primary"
+                    required>
+                  <span class="text-red-500 hidden" id="error-email">Please enter a valid email address.</span>
                 </div>
-                <p class="text-sm font-medium text-default-400 mt-5">Get 75 mins of upload for free every month</p>
-              </div>
+                <div class="mb-4">
+                  <label for="phone" class="block text-gray-300 font-medium mb-2">Phone Number</label>
+                  <input type="tel" id="phone" name="phone" pattern="[0-9]{10}"
+                    class="w-full px-4 py-3 rounded-lg bg-gray-700 text-white border border-gray-600 focus:ring-primary focus:border-primary"
+                    required>
+                  <span class="text-red-500 hidden" id="error-phone">Please enter a valid phone number.</span>
+                </div>
+                <div class="mb-4">
+                  <label for="comments" class="block text-gray-300 font-medium mb-2">Comments</label>
+                  <textarea id="comments" name="comments"
+                    class="w-full px-4 py-3 rounded-lg bg-gray-700 text-white border border-gray-600 focus:ring-primary focus:border-primary"></textarea>
+                  <span class="text-red-500 hidden" id="error-comments">Please enter your comments.</span>
+                </div>
+                <div class="flex justify-center">
+                  <button type="submit"
+                    class="bg-primary text-white lg:py-4 lg:px-8  py-2 px-4 text-lg rounded-full hover:bg-primary-hover transition-all duration-300">Get
+                    Your Free Consultation</button>
+                </div>
+              </form>
+              <div id="thanks-message" class="text-center text-green-500 hidden mt-4">Thanks for your submission!</div>
             </div>
           </div>
-        </div><!-- end container -->
-      </div><!-- end relative -->
+          <div class="px-8 pt-10 lg:pb-10">
+            <div class="relative rounded-xl overflow-hidden h-full w-full">
+              <iframe class="lg:w-96 w-full h-96 lg:h-full"
+                src="https://www.youtube.com/embed/hG7WtAXFRtc?autoplay=1&controls=0&si=Zljd_NF2Zii-icsf"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <footer class="bg-default-950/40 backdrop-blur-3xl">
-    <div class="container py-20">
-      <div class="grid md:grid-cols-4 grid-cols-2 gap-10 lg:gap-16">
-        <div class="md:col-span-2 col-span-2">
-          <img src="assets/images/logo.png" class="h-10" alt="">
-          <p class="md:w-3/4 text-base font-medium text-default-200 mt-6">Start working with Tailwindcss It
-            allows you to compose complex designs
-            by combining and customizing utility classes.</p>
-          <div class="mt-6">
-            <h6 class="text-base text-white mb-4">Follow US :</h6>
-            <ul class="flex flex-wrap items-center gap-1">
-              <li>
-                <a href="javascript:void(0);"
-                  class="h-10 w-10 inline-flex items-center justify-center border border-white/10 rounded-lg transition-all duration-500 group hover:bg-primary"><i
-                    data-lucide="facebook" class="h-5 w-5 text-default-300 group-hover:text-white"></i></a>
-              </li>
-              <li>
-                <a href="javascript:void(0);"
-                  class="h-10 w-10 inline-flex items-center justify-center border border-white/10 rounded-lg transition-all duration-500 group hover:bg-primary"><i
-                    data-lucide="instagram" class="h-5 w-5 text-default-300 group-hover:text-white"></i></a>
-              </li>
-              <li>
-                <a href="javascript:void(0);"
-                  class="h-10 w-10 inline-flex items-center justify-center border border-white/10 rounded-lg transition-all duration-500 group hover:bg-primary"><i
-                    data-lucide="twitter" class="h-5 w-5 text-default-300 group-hover:text-white"></i></a>
-              </li>
-              <li>
-                <a href="javascript:void(0);"
-                  class="h-10 w-10 inline-flex items-center justify-center border border-white/10 rounded-lg transition-all duration-500 group hover:bg-primary"><i
-                    data-lucide="linkedin" class="h-5 w-5 text-default-300 group-hover:text-white"></i></a>
-              </li>
-            </ul>
-          </div>
-        </div>
+  <script>
+    document.getElementById('contact-form').addEventListener('submit', function (event) {
+      event.preventDefault();
 
-        <div>
-          <ul class="flex flex-col gap-3">
-            <h5 class="xl:text-xl lg:text-lg font-medium text-default-200 mb-2">Company</h5>
-            <li>
-              <a href="javascript:void(0);"
-                class="text-base font-normal text-slate-300 hover:text-primary transition-all">About</a>
-            </li>
-            <li>
-              <a href="javascript:void(0);"
-                class="text-base font-normal text-slate-300 hover:text-primary transition-all">Developers</a>
-            </li>
-            <li>
-              <a href="javascript:void(0);"
-                class="text-base font-normal text-slate-300 hover:text-primary transition-all">Blog</a>
-            </li>
-            <li>
-              <a href="javascript:void(0);"
-                class="text-base font-normal text-slate-300 hover:text-primary transition-all">Contact</a>
-            </li>
-          </ul>
-        </div>
+      let formData = new FormData(event.target);
+      let formObject = {};
 
-        <div>
-          <ul class="flex flex-col gap-3">
-            <h5 class="xl:text-xl lg:text-lg font-medium text-default-200 mb-2">Service</h5>
-            <li>
-              <a href="javascript:void(0);"
-                class="text-base font-normal text-slate-300 hover:text-primary transition-all">Developer
-                Driven</a>
-            </li>
-            <li>
-              <a href="javascript:void(0);"
-                class="text-base font-normal text-slate-300 hover:text-primary transition-all">DMCA
-                policy</a>
-            </li>
-            <li>
-              <a href="javascript:void(0);"
-                class="text-base font-normal text-slate-300 hover:text-primary transition-all">Private
-                IPFS</a>
-            </li>
-            <li>
-              <a href="javascript:void(0);"
-                class="text-base font-normal text-slate-300 hover:text-primary transition-all">News</a>
-            </li>
-          </ul>
-        </div>
+      formData.forEach((value, key) => {
+        formObject[key] = value;
+      });
+
+      if (!formObject.comments) {
+        formObject.comments = ''; // Assign an empty string if comments are not provided
+      }
+
+      // Here, make an actual request to your endpoint (example).
+      // There should be an endpoint URL for submitting the form.
+      const endpointUrl = 'https://hook.us1.make.com/cdg8re7slv8m7cv1khhvuwqe5xgmyu0f'; // replace with your endpoint URL
+
+      fetch(endpointUrl, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formObject),
+      })
+        .then(response => {
+          if (response.ok) {
+            // Redirect to thanks.html
+            window.location.href = 'thanks.html';
+          } else {
+            console.error('Form submission failed');
+          }
+        })
+        .catch(error => {
+          console.error('Form submission error:', error);
+        });
+    });
+  </script>
+
+
+
+  <section class="py-20">
+    <div class="container">
+      <div class="text-center">
+        <h3 class="text-4xl font-semibold text-white mb-8">Learn more about our company and our products</h3>
+        <a href="http://www.recursivesolutions.net" class="text-lg text-primary hover:underline">Visit Recursive
+          Solutions</a>
       </div>
-    </div><!-- Container End -->
+    </div>
+  </section>
 
+
+  <footer class="bg-default-950/40 backdrop-blur-3xl">
     <div class="border-t border-white/10 py-6">
       <div
         class="container flex flex-wrap justify-center items-center gap-4 h-full md:justify-between text-center md:text-start">
         <p class="text-base font-medium text-default-400">
           <script>document.write(new Date().getFullYear())</script>
-          © WebAi - <a href="#">Design & Crafted <i data-lucide="heart"
-              class="inline h-4 w-4 text-red-500 fill-red-500"></i> by Coderthemes</a>
+          © OctoLink - <a href="#">Design & Crafted <i data-lucide="heart"
+              class="inline h-4 w-4 text-red-500 fill-red-500"></i> by Recursive Solutions</a>
         </p>
         <p class="text-base font-medium text-default-400">
           <a href="#">Terms Conditions & Policy</a>
